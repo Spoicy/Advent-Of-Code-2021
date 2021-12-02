@@ -9,3 +9,7 @@ Welcome to my repository for Advent of Code 2021. I'm partaking this year and us
 - If-statements use two different syntaxes, either [ *condition* ] **or** ((*condition*)). The square brackets method is based on the command **test** and uses the same operators. The double brackets is a light variation and can be used for more complex conditions.
 - If you need to read from a file, you can use **while read** to effectively do so.
 - To get the length of an array, you can use @ or * to call all elements and prefixing # to get the number of elements.
+
+### Day 2
+
+- **set - $var** is bash's equivalent of PHP's explode, and the string is split up into numbered variables (i.e. $1, $2, $3, etc.). The default separator is whitespace, but can be set with the variable **IFS**.
