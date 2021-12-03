@@ -13,3 +13,10 @@ Welcome to my repository for Advent of Code 2021. I'm partaking this year and us
 ### Day 2
 
 - **set - $var** is bash's equivalent of PHP's explode, and the string is split up into numbered variables (i.e. $1, $2, $3, etc.). The default separator is whitespace, but can be set with the variable **IFS**.
+
+### Day 3
+
+- Bash only has one-dimensional arrays. It does have associative arrays if required.
+- You cannot nest a **${}** mechanism inside itself.
+- **while read** skips the last line for some unknown reason that I'm not quite sure of yet.
+- Bash is also absolutely not intended for such tasks, but that's okay, it makes it all the more satisfying when it works. But it will also be complete hell.
