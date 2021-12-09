@@ -20,3 +20,8 @@ Welcome to my repository for Advent of Code 2021. I'm partaking this year and us
 - You cannot nest a **${}** mechanism inside itself.
 - **while read** skips the last line for some unknown reason that I'm not quite sure of yet.
 - Bash is also absolutely not intended for such tasks, but that's okay, it makes it all the more satisfying when it works. But it will also be complete hell.
+
+### Day 4
+
+- You can use **read -a *variable_name* <<< *string*** to accomplish the same thing as **set - $var**, but instead of the string being split up into numbered variables, it is split up into elements of an array. This process is **noticeably** slower than **set - $var** and will result in extremely slow processing time if used excessively. It should not be used if processing time is vital. Otherwise it allows you to do more complex functionality as you have more leeway with arrays.
+- Using pipes "|" as a delimiter does not work with Bash for reasons currently unknown to me.
