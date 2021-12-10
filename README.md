@@ -29,3 +29,7 @@ Welcome to my repository for Advent of Code 2021. I'm partaking this year and us
 ### Day 5
 - Excessive use of commands in general makes your script perform very slowly. If you know that your script will utilize thousands of scripts, you can either rewrite your script to not use a command or group multiple commands at once using **&** and appending **wait** at the end to then run simultaneously to cut down on time.
 - Using **echo $string | sed s/./*char*/*pos*** you can replace a character in a string. This is what I did originally before opting to not use commands.
+
+### Day 6
+- For exponential functions, it is crucial you break down your script to as barebones as possible. For Part One I did not end up doing this, and it tooks far too long to process 80 days, and would not at all be possible to run the same script for Part Two. For the Part Two solution I ended up giving up and searching for other people's Bash solutions for it. I stumbled upon Reddit user "shrewm"'s solution, which I ended up copying for my solution. It taught me to simplify your code in ways that reduce the amount of steps your script needs to run through everything. Instead of running through millions of values each loop, you could simplify them to 9 counters in order to reduce the amount of values you need to look at each loop down to just one.
+- In summary: **The most logical solution isn't always the most optimal. Reduce the amount of steps needed per loop by simplifying your code, i.e. simplying the way your data is stored, in this instance.**
