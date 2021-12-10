@@ -25,3 +25,7 @@ Welcome to my repository for Advent of Code 2021. I'm partaking this year and us
 
 - You can use **read -a *variable_name* <<< *string*** to accomplish the same thing as **set - $var**, but instead of the string being split up into numbered variables, it is split up into elements of an array. This process is **noticeably** slower than **set - $var** and will result in extremely slow processing time if used excessively. It should not be used if processing time is vital. Otherwise it allows you to do more complex functionality as you have more leeway with arrays.
 - Using pipes "|" as a delimiter does not work with Bash for reasons currently unknown to me.
+
+### Day 5
+- Excessive use of commands in general makes your script perform very slowly. If you know that your script will utilize thousands of scripts, you can either rewrite your script to not use a command or group multiple commands at once using **&** and appending **wait** at the end to then run simultaneously to cut down on time.
+- Using **echo $string | sed s/./*char*/*pos*** you can replace a character in a string. This is what I did originally before opting to not use commands.
